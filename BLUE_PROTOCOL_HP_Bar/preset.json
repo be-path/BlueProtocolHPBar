@@ -1,0 +1,1090 @@
+{
+  "preset_info": {
+    "version": 13,
+    "title": "BLUE PROTOCOL HP Bar",
+    "description": "",
+    "author": "Nal",
+    "email": "be.path@gmail.com",
+    "width": 948,
+    "height": 327,
+    "features": "",
+    "release": 376422110,
+    "locked": false,
+    "pflags": 0
+  },
+  "preset_root": {
+    "internal_events": [
+      {
+        "action": "KUSTOM_ACTION"
+      }
+    ],
+    "internal_type": "RootLayerModule",
+    "globals_list": {
+      "c0": {
+        "index": 8,
+        "type": "COLOR",
+        "title": "c0",
+        "value": "#FF191919"
+      },
+      "c1": {
+        "index": 9,
+        "type": "COLOR",
+        "title": "c1",
+        "value": "#FFFFFFFF"
+      },
+      "cbar1": {
+        "index": 13,
+        "type": "COLOR",
+        "title": "cbar1",
+        "value": "#FFFF5D50"
+      },
+      "cbar0": {
+        "index": 12,
+        "type": "COLOR",
+        "title": "cbar0",
+        "value": "#FFE5FF00"
+      },
+      "hbar": {
+        "index": 5,
+        "type": "NUMBER",
+        "title": "hbar",
+        "min": 1,
+        "max": 128,
+        "value": 18.0
+      },
+      "wrbar": {
+        "index": 6,
+        "type": "NUMBER",
+        "title": "wrbar",
+        "min": 50,
+        "max": 100,
+        "value": 80.0
+      },
+      "bbar": {
+        "index": 7,
+        "type": "NUMBER",
+        "title": "bbar",
+        "min": 0,
+        "max": 10,
+        "value": 2.0
+      },
+      "pname": {
+        "index": 1,
+        "type": "TEXT",
+        "title": "pname",
+        "value": "ルミナ"
+      },
+      "title": {
+        "index": 2,
+        "type": "TEXT",
+        "title": "title",
+        "value": "おはようレグナス"
+      },
+      "tname": {
+        "index": 3,
+        "type": "TEXT",
+        "title": "tname",
+        "value": "元レグ観"
+      },
+      "tsize": {
+        "index": 4,
+        "type": "NUMBER",
+        "title": "tsize",
+        "min": 1,
+        "max": 50,
+        "value": 30.0
+      },
+      "c2": {
+        "index": 11,
+        "type": "COLOR",
+        "title": "c2",
+        "value": "#66000000"
+      }
+    },
+    "viewgroup_items": [
+      {
+        "internal_type": "StackLayerModule",
+        "viewgroup_items": [
+          {
+            "internal_type": "StackLayerModule",
+            "internal_title": "称号とチーム",
+            "internal_toggles": {
+              "position_padding_left": 10,
+              "config_margin": 10,
+              "position_padding_bottom": 10
+            },
+            "internal_formulas": {
+              "position_padding_left": "$gv(tsize)*0.4$",
+              "config_margin": "$gv(tsize)*0.4$",
+              "position_padding_bottom": "$gv(tsize)*0.4$"
+            },
+            "config_stacking": "HORIZONTAL_CENTER",
+            "viewgroup_items": [
+              {
+                "internal_type": "OverlapLayerModule",
+                "internal_title": "称号",
+                "internal_toggles": {
+                  "position_padding_left": 0
+                },
+                "internal_formulas": {
+                  "position_padding_left": ""
+                },
+                "viewgroup_items": [
+                  {
+                    "internal_type": "TextModule",
+                    "text_expression": "$gv(pname)$",
+                    "text_size": 30.0,
+                    "internal_title": "影",
+                    "internal_toggles": {
+                      "text_family": 0,
+                      "paint_color": 0,
+                      "fx_shadow_direction": 10,
+                      "fx_shadow_distance": 10,
+                      "text_expression": 100,
+                      "text_size": 10
+                    },
+                    "internal_globals": {
+                      "paint_color": "c0",
+                      "text_expression": "title"
+                    },
+                    "internal_formulas": {
+                      "fx_shadow_direction": "$45*si(mindex)$",
+                      "fx_shadow_distance": "$gv(bbar)$",
+                      "text_size": "$gv(tsize)*0.75$"
+                    },
+                    "text_align": "CENTER",
+                    "paint_color": "#00FFFFFF",
+                    "fx_shadow": "OUTER",
+                    "fx_shadow_blur": 1,
+                    "fx_shadow_direction": 0,
+                    "fx_shadow_distance": 4.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_expression": "$gv(pname)$",
+                    "text_size": 30.0,
+                    "internal_title": "影",
+                    "internal_toggles": {
+                      "text_family": 0,
+                      "paint_color": 0,
+                      "fx_shadow_direction": 10,
+                      "fx_shadow_distance": 10,
+                      "text_expression": 100,
+                      "text_size": 10
+                    },
+                    "internal_globals": {
+                      "paint_color": "c0",
+                      "text_expression": "title"
+                    },
+                    "internal_formulas": {
+                      "fx_shadow_direction": "$45*si(mindex)$",
+                      "fx_shadow_distance": "$gv(bbar)$",
+                      "text_size": "$gv(tsize)*0.75$"
+                    },
+                    "text_align": "CENTER",
+                    "paint_color": "#00FFFFFF",
+                    "fx_shadow": "OUTER",
+                    "fx_shadow_blur": 1,
+                    "fx_shadow_direction": 0,
+                    "fx_shadow_distance": 4.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_expression": "$gv(pname)$",
+                    "text_size": 30.0,
+                    "internal_title": "影",
+                    "internal_toggles": {
+                      "text_family": 0,
+                      "paint_color": 0,
+                      "fx_shadow_direction": 10,
+                      "fx_shadow_distance": 10,
+                      "text_expression": 100,
+                      "text_size": 10
+                    },
+                    "internal_globals": {
+                      "paint_color": "c0",
+                      "text_expression": "title"
+                    },
+                    "internal_formulas": {
+                      "fx_shadow_direction": "$45*si(mindex)$",
+                      "fx_shadow_distance": "$gv(bbar)$",
+                      "text_size": "$gv(tsize)*0.75$"
+                    },
+                    "text_align": "CENTER",
+                    "paint_color": "#00FFFFFF",
+                    "fx_shadow": "OUTER",
+                    "fx_shadow_blur": 1,
+                    "fx_shadow_direction": 0,
+                    "fx_shadow_distance": 4.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_expression": "$gv(pname)$",
+                    "text_size": 30.0,
+                    "internal_title": "影",
+                    "internal_toggles": {
+                      "text_family": 0,
+                      "paint_color": 0,
+                      "fx_shadow_direction": 10,
+                      "fx_shadow_distance": 10,
+                      "text_expression": 100,
+                      "text_size": 10
+                    },
+                    "internal_globals": {
+                      "paint_color": "c0",
+                      "text_expression": "title"
+                    },
+                    "internal_formulas": {
+                      "fx_shadow_direction": "$45*si(mindex)$",
+                      "fx_shadow_distance": "$gv(bbar)$",
+                      "text_size": "$gv(tsize)*0.75$"
+                    },
+                    "text_align": "CENTER",
+                    "paint_color": "#00FFFFFF",
+                    "fx_shadow": "OUTER",
+                    "fx_shadow_blur": 1,
+                    "fx_shadow_direction": 0,
+                    "fx_shadow_distance": 4.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_expression": "$gv(pname)$",
+                    "text_size": 30.0,
+                    "internal_title": "影",
+                    "internal_toggles": {
+                      "text_family": 0,
+                      "paint_color": 0,
+                      "fx_shadow_direction": 10,
+                      "fx_shadow_distance": 10,
+                      "text_expression": 100,
+                      "text_size": 10
+                    },
+                    "internal_globals": {
+                      "paint_color": "c0",
+                      "text_expression": "title"
+                    },
+                    "internal_formulas": {
+                      "fx_shadow_direction": "$45*si(mindex)$",
+                      "fx_shadow_distance": "$gv(bbar)$",
+                      "text_size": "$gv(tsize)*0.75$"
+                    },
+                    "text_align": "CENTER",
+                    "paint_color": "#00FFFFFF",
+                    "fx_shadow": "OUTER",
+                    "fx_shadow_blur": 1,
+                    "fx_shadow_direction": 0,
+                    "fx_shadow_distance": 4.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_expression": "$gv(pname)$",
+                    "text_size": 30.0,
+                    "internal_title": "影",
+                    "internal_toggles": {
+                      "text_family": 0,
+                      "paint_color": 0,
+                      "fx_shadow_direction": 10,
+                      "fx_shadow_distance": 10,
+                      "text_expression": 100,
+                      "text_size": 10
+                    },
+                    "internal_globals": {
+                      "paint_color": "c0",
+                      "text_expression": "title"
+                    },
+                    "internal_formulas": {
+                      "fx_shadow_direction": "$45*si(mindex)$",
+                      "fx_shadow_distance": "$gv(bbar)$",
+                      "text_size": "$gv(tsize)*0.75$"
+                    },
+                    "text_align": "CENTER",
+                    "paint_color": "#00FFFFFF",
+                    "fx_shadow": "OUTER",
+                    "fx_shadow_blur": 1,
+                    "fx_shadow_direction": 0,
+                    "fx_shadow_distance": 4.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_expression": "$gv(pname)$",
+                    "text_size": 30.0,
+                    "internal_title": "影",
+                    "internal_toggles": {
+                      "text_family": 0,
+                      "paint_color": 0,
+                      "fx_shadow_direction": 10,
+                      "fx_shadow_distance": 10,
+                      "text_expression": 100,
+                      "text_size": 10
+                    },
+                    "internal_globals": {
+                      "paint_color": "c0",
+                      "text_expression": "title"
+                    },
+                    "internal_formulas": {
+                      "fx_shadow_direction": "$45*si(mindex)$",
+                      "fx_shadow_distance": "$gv(bbar)$",
+                      "text_size": "$gv(tsize)*0.75$"
+                    },
+                    "text_align": "CENTER",
+                    "paint_color": "#00FFFFFF",
+                    "fx_shadow": "OUTER",
+                    "fx_shadow_blur": 1,
+                    "fx_shadow_direction": 0,
+                    "fx_shadow_distance": 4.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_expression": "$gv(pname)$",
+                    "text_size": 30.0,
+                    "internal_title": "影",
+                    "internal_toggles": {
+                      "text_family": 0,
+                      "paint_color": 0,
+                      "fx_shadow_direction": 10,
+                      "fx_shadow_distance": 10,
+                      "text_expression": 100,
+                      "text_size": 10
+                    },
+                    "internal_globals": {
+                      "paint_color": "c0",
+                      "text_expression": "title"
+                    },
+                    "internal_formulas": {
+                      "fx_shadow_direction": "$45*si(mindex)$",
+                      "fx_shadow_distance": "$gv(bbar)$",
+                      "text_size": "$gv(tsize)*0.75$"
+                    },
+                    "text_align": "CENTER",
+                    "paint_color": "#00FFFFFF",
+                    "fx_shadow": "OUTER",
+                    "fx_shadow_blur": 1,
+                    "fx_shadow_direction": 0,
+                    "fx_shadow_distance": 4.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_expression": "$gv(pname)$",
+                    "text_size": 30.0,
+                    "internal_title": "本体",
+                    "internal_toggles": {
+                      "text_expression": 100,
+                      "text_size": 10
+                    },
+                    "internal_formulas": {
+                      "text_size": "$gv(tsize)*0.75$"
+                    },
+                    "internal_globals": {
+                      "text_expression": "title"
+                    },
+                    "text_align": "CENTER"
+                  }
+                ]
+              },
+              {
+                "internal_type": "OverlapLayerModule",
+                "internal_title": "チームタグ",
+                "internal_toggles": {
+                  "config_visible": 10
+                },
+                "internal_formulas": {
+                  "config_visible": "$if(tc(len, gv(tname))>0, ALWAYS, NEVER)$"
+                },
+                "viewgroup_items": [
+                  {
+                    "internal_type": "StackLayerModule",
+                    "internal_title": "影",
+                    "config_stacking": "HORIZONTAL_CENTER",
+                    "viewgroup_items": [
+                      {
+                        "internal_type": "ShapeModule",
+                        "internal_toggles": {
+                          "shape_rotate_mode": 0,
+                          "shape_width": 10,
+                          "shape_height": 10,
+                          "paint_color": 100
+                        },
+                        "internal_formulas": {
+                          "shape_rotate_mode": "",
+                          "shape_width": "$(gv(tsize)+gv(bbar)*2)/mu(sqrt, 2)$",
+                          "shape_height": "$(gv(tsize)+gv(bbar)*2)/mu(sqrt, 2)$"
+                        },
+                        "internal_globals": {
+                          "paint_color": "c0"
+                        },
+                        "shape_type": "RTRIANGLE",
+                        "shape_rotate_mode": "MANUAL",
+                        "shape_rotate_offset": 315.0,
+                        "fx_shadow_blur": 1,
+                        "fx_shadow_direction": 180.0,
+                        "fx_shadow_distance": 31,
+                        "position_anchor": "CENTERRIGHT"
+                      },
+                      {
+                        "internal_type": "OverlapLayerModule",
+                        "viewgroup_items": [
+                          {
+                            "internal_type": "ShapeModule",
+                            "internal_toggles": {
+                              "shape_height": 10,
+                              "shape_width": 10,
+                              "paint_color": 100,
+                              "shape_corners": 0
+                            },
+                            "internal_formulas": {
+                              "shape_height": "$gv(tsize)+gv(bbar)*2$",
+                              "shape_width": "$gv(tsize)*0.5$",
+                              "shape_corners": "$(gv(tsize)+gv(bbar)*2)*0.1$"
+                            },
+                            "internal_globals": {
+                              "paint_color": "c0"
+                            },
+                            "shape_type": "RECT",
+                            "position_anchor": "CENTERLEFT"
+                          },
+                          {
+                            "internal_type": "ShapeModule",
+                            "internal_toggles": {
+                              "shape_height": 10,
+                              "shape_width": 10,
+                              "paint_color": 100,
+                              "shape_corners": 10
+                            },
+                            "internal_formulas": {
+                              "shape_height": "$gv(tsize)+gv(bbar)*2$",
+                              "shape_width": "$gv(tsize)*4.5+gv(tsize)*0.3+gv(bbar)$",
+                              "shape_corners": "$(gv(tsize)+gv(bbar)*2)*0.1$"
+                            },
+                            "internal_globals": {
+                              "paint_color": "c0"
+                            },
+                            "shape_type": "RECT",
+                            "position_anchor": "CENTERLEFT"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "internal_type": "StackLayerModule",
+                    "internal_title": "チームタグ",
+                    "config_stacking": "HORIZONTAL_CENTER",
+                    "viewgroup_items": [
+                      {
+                        "internal_type": "OverlapLayerModule",
+                        "internal_title": "左",
+                        "viewgroup_items": [
+                          {
+                            "internal_type": "StackLayerModule",
+                            "config_stacking": "HORIZONTAL_CENTER",
+                            "position_anchor": "CENTERRIGHT",
+                            "viewgroup_items": [
+                              {
+                                "internal_type": "ShapeModule",
+                                "internal_toggles": {
+                                  "shape_rotate_mode": 0,
+                                  "shape_width": 10,
+                                  "shape_height": 10,
+                                  "paint_color": 100
+                                },
+                                "internal_formulas": {
+                                  "shape_rotate_mode": "",
+                                  "shape_width": "$gv(tsize)/mu(sqrt, 2)$",
+                                  "shape_height": "$gv(tsize)/mu(sqrt, 2)$"
+                                },
+                                "internal_globals": {
+                                  "paint_color": "c1"
+                                },
+                                "shape_type": "RTRIANGLE",
+                                "shape_rotate_mode": "MANUAL",
+                                "shape_rotate_offset": 315.0,
+                                "position_anchor": "CENTERRIGHT"
+                              },
+                              {
+                                "internal_type": "ShapeModule",
+                                "internal_toggles": {
+                                  "shape_height": 100,
+                                  "shape_width": 10,
+                                  "paint_color": 100
+                                },
+                                "internal_formulas": {
+                                  "shape_width": "$gv(tsize)*0.25$"
+                                },
+                                "internal_globals": {
+                                  "shape_height": "tsize",
+                                  "paint_color": "c1"
+                                },
+                                "shape_type": "RECT"
+                              }
+                            ]
+                          },
+                          {
+                            "internal_type": "ShapeModule",
+                            "internal_toggles": {
+                              "shape_rotate_mode": 0,
+                              "shape_width": 10,
+                              "shape_height": 10,
+                              "paint_color": 100,
+                              "position_padding_left": 10,
+                              "fx_shadow_color": 100,
+                              "fx_shadow_blur": 10
+                            },
+                            "internal_formulas": {
+                              "shape_rotate_mode": "",
+                              "shape_width": "$gv(tsize)/mu(sqrt, 2)$",
+                              "shape_height": "$gv(tsize)/mu(sqrt, 2)$",
+                              "position_padding_left": "$gv(tsize)*0.3$",
+                              "fx_shadow_blur": "$gv(tsize)*3$"
+                            },
+                            "internal_globals": {
+                              "paint_color": "c0",
+                              "fx_shadow_color": "c0"
+                            },
+                            "shape_type": "RTRIANGLE",
+                            "shape_rotate_mode": "MANUAL",
+                            "shape_rotate_offset": 315.0,
+                            "fx_shadow_blur": 1,
+                            "fx_shadow_direction": 180.0,
+                            "fx_shadow_distance": 0,
+                            "position_anchor": "CENTERRIGHT",
+                            "fx_shadow": "OUTER"
+                          },
+                          {
+                            "internal_type": "ShapeModule",
+                            "internal_toggles": {
+                              "shape_rotate_mode": 0,
+                              "shape_width": 10,
+                              "shape_height": 10,
+                              "paint_color": 100
+                            },
+                            "internal_formulas": {
+                              "shape_rotate_mode": "",
+                              "shape_width": "$gv(tsize)/mu(sqrt, 2)$",
+                              "shape_height": "$gv(tsize)/mu(sqrt, 2)$"
+                            },
+                            "internal_globals": {
+                              "paint_color": "cbar0"
+                            },
+                            "shape_type": "RTRIANGLE",
+                            "shape_rotate_mode": "MANUAL",
+                            "shape_rotate_offset": 315.0,
+                            "fx_shadow_blur": 1,
+                            "fx_shadow_direction": 180.0,
+                            "fx_shadow_distance": 31,
+                            "position_anchor": "CENTERRIGHT"
+                          },
+                          {
+                            "internal_type": "ShapeModule",
+                            "internal_toggles": {
+                              "shape_width": 10,
+                              "paint_color": 100
+                            },
+                            "internal_formulas": {
+                              "shape_width": "$gv(tsize)*0.2$"
+                            },
+                            "internal_globals": {
+                              "paint_color": "c0"
+                            },
+                            "shape_type": "CIRCLE",
+                            "position_anchor": "CENTERRIGHT"
+                          }
+                        ]
+                      },
+                      {
+                        "internal_type": "OverlapLayerModule",
+                        "internal_title": "右",
+                        "viewgroup_items": [
+                          {
+                            "internal_type": "OverlapLayerModule",
+                            "viewgroup_items": [
+                              {
+                                "internal_type": "ShapeModule",
+                                "internal_toggles": {
+                                  "shape_height": 10,
+                                  "shape_width": 10,
+                                  "paint_color": 100,
+                                  "shape_corners": 0
+                                },
+                                "internal_formulas": {
+                                  "shape_height": "$gv(tsize)$",
+                                  "shape_width": "$gv(tsize)*0.5$",
+                                  "shape_corners": "$gv(tsize)*0.1$"
+                                },
+                                "internal_globals": {
+                                  "paint_color": "cbar0"
+                                },
+                                "shape_type": "RECT",
+                                "position_anchor": "CENTERLEFT"
+                              },
+                              {
+                                "internal_type": "ShapeModule",
+                                "internal_toggles": {
+                                  "shape_height": 10,
+                                  "shape_width": 10,
+                                  "paint_color": 100,
+                                  "shape_corners": 10
+                                },
+                                "internal_formulas": {
+                                  "shape_height": "$gv(tsize)$",
+                                  "shape_width": "$gv(tsize)*4.5$",
+                                  "shape_corners": "$gv(tsize)*0.1$"
+                                },
+                                "internal_globals": {
+                                  "paint_color": "cbar0"
+                                },
+                                "shape_type": "RECT",
+                                "position_anchor": "CENTERLEFT"
+                              }
+                            ]
+                          },
+                          {
+                            "internal_type": "TextModule",
+                            "internal_toggles": {
+                              "text_expression": 0,
+                              "text_size": 10,
+                              "paint_color": 100,
+                              "position_padding_left": 10
+                            },
+                            "internal_formulas": {
+                              "text_size": "$gv(tsize)*0.7$",
+                              "position_padding_left": "$gv(tsize)*0.5$"
+                            },
+                            "internal_globals": {
+                              "text_expression": "tname",
+                              "paint_color": "c0",
+                              "text_size": "tsize"
+                            },
+                            "text_expression": "$tc(cut, gv(tname), 0, 4)$",
+                            "position_anchor": "CENTERLEFT",
+                            "text_family": "kfile://org.kustom.provider/fonts/Roboto-Bold.ttf"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "internal_type": "OverlapLayerModule",
+            "internal_title": "名前",
+            "internal_toggles": {
+              "position_padding_left": 10
+            },
+            "internal_formulas": {
+              "position_padding_left": "$gv(tsize)*0.4$"
+            },
+            "viewgroup_items": [
+              {
+                "internal_type": "TextModule",
+                "text_expression": "$gv(pname)$",
+                "text_size": 30.0,
+                "internal_title": "影",
+                "internal_toggles": {
+                  "text_family": 0,
+                  "paint_color": 0,
+                  "fx_shadow_direction": 10,
+                  "fx_shadow_distance": 10,
+                  "text_expression": 100,
+                  "text_size": 100
+                },
+                "internal_globals": {
+                  "paint_color": "c0",
+                  "text_expression": "pname",
+                  "text_size": "tsize"
+                },
+                "internal_formulas": {
+                  "fx_shadow_direction": "$45*si(mindex)$",
+                  "fx_shadow_distance": "$gv(bbar)$",
+                  "text_size": "$gv(wrbar)*0.4$"
+                },
+                "text_align": "CENTER",
+                "paint_color": "#00FFFFFF",
+                "fx_shadow": "OUTER",
+                "fx_shadow_blur": 1,
+                "fx_shadow_direction": 0,
+                "fx_shadow_distance": 4.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_expression": "$gv(pname)$",
+                "text_size": 30.0,
+                "internal_title": "影",
+                "internal_toggles": {
+                  "text_family": 0,
+                  "paint_color": 0,
+                  "fx_shadow_direction": 10,
+                  "fx_shadow_distance": 10,
+                  "text_expression": 100,
+                  "text_size": 100
+                },
+                "internal_globals": {
+                  "paint_color": "c0",
+                  "text_expression": "pname",
+                  "text_size": "tsize"
+                },
+                "internal_formulas": {
+                  "fx_shadow_direction": "$45*si(mindex)$",
+                  "fx_shadow_distance": "$gv(bbar)$",
+                  "text_size": "$gv(wrbar)*0.4$"
+                },
+                "text_align": "CENTER",
+                "paint_color": "#00FFFFFF",
+                "fx_shadow": "OUTER",
+                "fx_shadow_blur": 1,
+                "fx_shadow_direction": 0,
+                "fx_shadow_distance": 4.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_expression": "$gv(pname)$",
+                "text_size": 30.0,
+                "internal_title": "影",
+                "internal_toggles": {
+                  "text_family": 0,
+                  "paint_color": 0,
+                  "fx_shadow_direction": 10,
+                  "fx_shadow_distance": 10,
+                  "text_expression": 100,
+                  "text_size": 100
+                },
+                "internal_globals": {
+                  "paint_color": "c0",
+                  "text_expression": "pname",
+                  "text_size": "tsize"
+                },
+                "internal_formulas": {
+                  "fx_shadow_direction": "$45*si(mindex)$",
+                  "fx_shadow_distance": "$gv(bbar)$",
+                  "text_size": "$gv(wrbar)*0.4$"
+                },
+                "text_align": "CENTER",
+                "paint_color": "#00FFFFFF",
+                "fx_shadow": "OUTER",
+                "fx_shadow_blur": 1,
+                "fx_shadow_direction": 0,
+                "fx_shadow_distance": 4.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_expression": "$gv(pname)$",
+                "text_size": 30.0,
+                "internal_title": "影",
+                "internal_toggles": {
+                  "text_family": 0,
+                  "paint_color": 0,
+                  "fx_shadow_direction": 10,
+                  "fx_shadow_distance": 10,
+                  "text_expression": 100,
+                  "text_size": 100
+                },
+                "internal_globals": {
+                  "paint_color": "c0",
+                  "text_expression": "pname",
+                  "text_size": "tsize"
+                },
+                "internal_formulas": {
+                  "fx_shadow_direction": "$45*si(mindex)$",
+                  "fx_shadow_distance": "$gv(bbar)$",
+                  "text_size": "$gv(wrbar)*0.4$"
+                },
+                "text_align": "CENTER",
+                "paint_color": "#00FFFFFF",
+                "fx_shadow": "OUTER",
+                "fx_shadow_blur": 1,
+                "fx_shadow_direction": 0,
+                "fx_shadow_distance": 4.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_expression": "$gv(pname)$",
+                "text_size": 30.0,
+                "internal_title": "影",
+                "internal_toggles": {
+                  "text_family": 0,
+                  "paint_color": 0,
+                  "fx_shadow_direction": 10,
+                  "fx_shadow_distance": 10,
+                  "text_expression": 100,
+                  "text_size": 100
+                },
+                "internal_globals": {
+                  "paint_color": "c0",
+                  "text_expression": "pname",
+                  "text_size": "tsize"
+                },
+                "internal_formulas": {
+                  "fx_shadow_direction": "$45*si(mindex)$",
+                  "fx_shadow_distance": "$gv(bbar)$",
+                  "text_size": "$gv(wrbar)*0.4$"
+                },
+                "text_align": "CENTER",
+                "paint_color": "#00FFFFFF",
+                "fx_shadow": "OUTER",
+                "fx_shadow_blur": 1,
+                "fx_shadow_direction": 0,
+                "fx_shadow_distance": 4.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_expression": "$gv(pname)$",
+                "text_size": 30.0,
+                "internal_title": "影",
+                "internal_toggles": {
+                  "text_family": 0,
+                  "paint_color": 0,
+                  "fx_shadow_direction": 10,
+                  "fx_shadow_distance": 10,
+                  "text_expression": 100,
+                  "text_size": 100
+                },
+                "internal_globals": {
+                  "paint_color": "c0",
+                  "text_expression": "pname",
+                  "text_size": "tsize"
+                },
+                "internal_formulas": {
+                  "fx_shadow_direction": "$45*si(mindex)$",
+                  "fx_shadow_distance": "$gv(bbar)$",
+                  "text_size": "$gv(wrbar)*0.4$"
+                },
+                "text_align": "CENTER",
+                "paint_color": "#00FFFFFF",
+                "fx_shadow": "OUTER",
+                "fx_shadow_blur": 1,
+                "fx_shadow_direction": 0,
+                "fx_shadow_distance": 4.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_expression": "$gv(pname)$",
+                "text_size": 30.0,
+                "internal_title": "影",
+                "internal_toggles": {
+                  "text_family": 0,
+                  "paint_color": 0,
+                  "fx_shadow_direction": 10,
+                  "fx_shadow_distance": 10,
+                  "text_expression": 100,
+                  "text_size": 100
+                },
+                "internal_globals": {
+                  "paint_color": "c0",
+                  "text_expression": "pname",
+                  "text_size": "tsize"
+                },
+                "internal_formulas": {
+                  "fx_shadow_direction": "$45*si(mindex)$",
+                  "fx_shadow_distance": "$gv(bbar)$",
+                  "text_size": "$gv(wrbar)*0.4$"
+                },
+                "text_align": "CENTER",
+                "paint_color": "#00FFFFFF",
+                "fx_shadow": "OUTER",
+                "fx_shadow_blur": 1,
+                "fx_shadow_direction": 0,
+                "fx_shadow_distance": 4.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_expression": "$gv(pname)$",
+                "text_size": 30.0,
+                "internal_title": "影",
+                "internal_toggles": {
+                  "text_family": 0,
+                  "paint_color": 0,
+                  "fx_shadow_direction": 10,
+                  "fx_shadow_distance": 10,
+                  "text_expression": 100,
+                  "text_size": 100
+                },
+                "internal_globals": {
+                  "paint_color": "c0",
+                  "text_expression": "pname",
+                  "text_size": "tsize"
+                },
+                "internal_formulas": {
+                  "fx_shadow_direction": "$45*si(mindex)$",
+                  "fx_shadow_distance": "$gv(bbar)$",
+                  "text_size": "$gv(wrbar)*0.4$"
+                },
+                "text_align": "CENTER",
+                "paint_color": "#00FFFFFF",
+                "fx_shadow": "OUTER",
+                "fx_shadow_blur": 1,
+                "fx_shadow_direction": 0,
+                "fx_shadow_distance": 4.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_expression": "$gv(pname)$",
+                "text_size": 30.0,
+                "internal_title": "本体",
+                "internal_toggles": {
+                  "text_expression": 100,
+                  "text_size": 100
+                },
+                "internal_formulas": {
+                  "text_size": "$gv(wrbar)*0.4$"
+                },
+                "internal_globals": {
+                  "text_expression": "pname",
+                  "text_size": "tsize"
+                },
+                "text_align": "CENTER"
+              }
+            ]
+          },
+          {
+            "internal_type": "OverlapLayerModule",
+            "internal_title": "HP",
+            "viewgroup_items": [
+              {
+                "internal_type": "OverlapLayerModule",
+                "internal_title": "lt99",
+                "internal_toggles": {
+                  "config_visible": 10
+                },
+                "internal_formulas": {
+                  "config_visible": "$if(bi(level) < 100, ALWAYS,  NEVER)$"
+                },
+                "viewgroup_items": [
+                  {
+                    "internal_type": "ShapeModule",
+                    "internal_toggles": {
+                      "shape_width": 10,
+                      "shape_height": 100,
+                      "paint_color": 100,
+                      "shape_corners": 100
+                    },
+                    "internal_formulas": {
+                      "shape_width": "$si(rwidth)*gv(wrbar)/100$"
+                    },
+                    "internal_globals": {
+                      "shape_height": "hbar",
+                      "paint_color": "c0",
+                      "shape_corners": "hbar"
+                    },
+                    "shape_type": "RECT",
+                    "shape_corners": 360,
+                    "internal_title": "背景"
+                  },
+                  {
+                    "internal_type": "OverlapLayerModule",
+                    "viewgroup_items": [
+                      {
+                        "internal_type": "ShapeModule",
+                        "internal_toggles": {
+                          "shape_width": 10,
+                          "shape_height": 10,
+                          "paint_color": 100,
+                          "shape_corners": 100
+                        },
+                        "internal_formulas": {
+                          "shape_width": "$si(rwidth)*gv(wrbar)/100-gv(bbar)*2$",
+                          "shape_height": "$gv(hbar)-gv(bbar)*2$"
+                        },
+                        "internal_globals": {
+                          "shape_height": "hbar",
+                          "paint_color": "c1",
+                          "shape_corners": "hbar"
+                        },
+                        "shape_type": "RECT",
+                        "shape_corners": 360,
+                        "internal_title": "マスク",
+                        "fx_mask": "CLIP_NEXT",
+                        "position_anchor": "CENTERLEFT"
+                      },
+                      {
+                        "internal_type": "OverlapLayerModule",
+                        "position_anchor": "CENTERLEFT",
+                        "viewgroup_items": [
+                          {
+                            "internal_type": "ShapeModule",
+                            "internal_toggles": {
+                              "shape_width": 10,
+                              "shape_height": 100,
+                              "paint_color": 100
+                            },
+                            "internal_formulas": {
+                              "shape_width": "$si(rwidth)*gv(wrbar)/100*bi(level, r60m)/100-gv(bbar)*2$",
+                              "shape_height": "$gv(hbar)-gv(bbar)*2$"
+                            },
+                            "internal_globals": {
+                              "shape_height": "hbar",
+                              "paint_color": "cbar1"
+                            },
+                            "shape_type": "RECT",
+                            "internal_title": "過去",
+                            "position_anchor": "CENTERLEFT"
+                          },
+                          {
+                            "internal_type": "ShapeModule",
+                            "internal_toggles": {
+                              "shape_width": 10,
+                              "shape_height": 100,
+                              "paint_color": 100
+                            },
+                            "internal_formulas": {
+                              "shape_width": "$si(rwidth)*gv(wrbar)/100*bi(level)/100-gv(bbar)*2$",
+                              "shape_height": "$gv(hbar)-gv(bbar)*2$"
+                            },
+                            "internal_globals": {
+                              "shape_height": "hbar",
+                              "paint_color": "cbar0"
+                            },
+                            "shape_type": "RECT",
+                            "internal_title": "現在",
+                            "position_anchor": "CENTERLEFT"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "internal_type": "OverlapLayerModule",
+                "internal_toggles": {
+                  "config_visible": 10
+                },
+                "internal_formulas": {
+                  "config_visible": "$if(bi(level) = 100, ALWAYS,  NEVER)$"
+                },
+                "viewgroup_items": [
+                  {
+                    "internal_type": "ShapeModule",
+                    "internal_toggles": {
+                      "shape_width": 10,
+                      "shape_height": 10,
+                      "shape_corners": 100,
+                      "paint_color": 100,
+                      "fx_shadow_distance": 10,
+                      "fx_shadow_color": 100
+                    },
+                    "internal_formulas": {
+                      "shape_width": "$si(rwidth)*gv(wrbar)/100-gv(bbar)*2$",
+                      "shape_height": "$gv(hbar)*0.3$",
+                      "fx_shadow_distance": "$gv(hbar)*0.3/mu(sin, 45)$"
+                    },
+                    "internal_globals": {
+                      "shape_corners": "hbar",
+                      "paint_color": "cbar0",
+                      "fx_shadow_color": "c2"
+                    },
+                    "shape_type": "RECT",
+                    "fx_shadow": "OUTER",
+                    "fx_shadow_blur": 1,
+                    "fx_shadow_direction": 225.0,
+                    "fx_shadow_distance": 5
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
